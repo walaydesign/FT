@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FT ETF</title>
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "dka4nix",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="./" class="header_logo">
+          <img src="./public/img/logo.svg" alt="" />
+        </a>
+        <nav class="header_nav">
+          <ul>
+            <li><a href="">配息時程</a></li>
+            <li><a href="">精選ETF</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="head">
+        <div class="kv">
+          <div class="container">
+            <img class="kv_title" src="./public/img/title-1.webp" alt="" />
+            <div class="row">
+              <div class="col-md-4">
+                <div class="kv_item kv_item-green">
+                  <div class="kv_text">
+                    <h2>00905</h2>
+                    <h3>FT 臺灣 Smart</h3>
+                    <h4>
+                      (本基金之配息來源<br />
+                      可能為收益平準金)
+                    </h4>
+                  </div>
+                  <img src="./public/img/character-1.webp" alt="" />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="kv_item kv_item-yellow">
+                  <div class="kv_text">
+                    <h2>00961</h2>
+                    <h3>FT 臺灣永續高息</h3>
+                    <h4>
+                      (本基金並無保證收益及配息<br />
+                      且配息來源可能為收益平準金)
+                    </h4>
+                  </div>
+                  <img src="./public/img/character-2.webp" alt="" />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="kv_item kv_item-purple">
+                  <div class="kv_text">
+                    <h2>00982B</h2>
+                    <h3>FT 投資級債 20+</h3>
+                    <h4>
+                      (本基金之配息來源<br />
+                      可能為收益平準金)
+                    </h4>
+                  </div>
+                  <img src="./public/img/character-3.webp" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timetable">
+          <img class="timetable_title" src="./public/img/title-2.svg" alt="" />
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="timetable_item">
+                  <div class="timetable_item_title">
+                    <h2>
+                      00905<br />
+                      00961
+                    </h2>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="timetable_date">
+                        <h3>
+                          配息金額<br />
+                          公告日
+                        </h3>
+                        <p>7/1</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="timetable_date">
+                        <h3>
+                          最後<br />
+                          買進日
+                        </h3>
+                        <p>7/15</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="timetable_date">
+                        <h3>除息日</h3>
+                        <p>7/16</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="timetable_date">
+                        <h3>
+                          配息<br />
+                          發放日
+                        </h3>
+                        <p>8/8</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="timetable_item">
+                  <div class="timetable_item_title">
+                    <h2>00982B</h2>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="timetable_date">
+                        <h3>
+                          配息金額<br />
+                          公告日
+                        </h3>
+                        <p>7/1</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="timetable_date">
+                        <h3>
+                          最後<br />
+                          買進日
+                        </h3>
+                        <p>7/16</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="timetable_date">
+                        <h3>除息日</h3>
+                        <p>7/17</p>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="timetable_date">
+                        <h3>
+                          配息<br />
+                          發放日
+                        </h3>
+                        <p>8/12</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="come">
+        <img class="come_deco" src="./public/img/triangle.svg" alt="">
+        <img class="come_title" src="./public/img/title-3.svg" alt="">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="come_item come_item-green">
+                <div class="come_pic">
+                  <h2>00905</h2>
+                  <img src="./public/img/character-4.webp" alt="">
+                </div>
+                <div class="come_btn">
+                  <a href="">了解更多</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="come_item come_item-green">
+                <div class="come_pic">
+                  <h2>00961</h2>
+                  <img src="./public/img/character-5.webp" alt="">
+                </div>
+                <div class="come_btn">
+                  <a href="">了解更多</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="come_item come_item-green">
+                <div class="come_pic">
+                  <h2>00982B</h2>
+                  <img src="./public/img/character-6.webp" alt="">
+                </div>
+                <div class="come_btn">
+                  <a href="">了解更多</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/common.js"></script>
+  </body>
+</html>
