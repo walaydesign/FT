@@ -133,8 +133,14 @@ ul {
 .head {
   background-image: url(../img/bg-1.png);
   background-size: 100%;
-  background-position: 0 top;
+  background-position: 0 32%;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 991px) {
+  .head {
+    background-position: 0 top;
+  }
 }
 
 .example {
@@ -144,7 +150,16 @@ ul {
 
 .kv {
   padding-top: 2vw;
-  padding-bottom: 15vw;
+  padding-bottom: 10vw;
+  position: relative;
+}
+
+.kv_circles {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  mix-blend-mode: soft-light;
 }
 
 .kv_title {
@@ -449,6 +464,10 @@ ul {
   .kv_text h3, .kv_text h4 {
     font-size: 20px;
   }
+  .kv_date {
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
   .kv_date_content {
     gap: 40px;
   }
@@ -457,6 +476,9 @@ ul {
   }
   .kv_date_num li {
     font-size: 22px;
+  }
+  .kv_date h1 {
+    margin-bottom: 15px;
   }
 }
 
@@ -497,7 +519,7 @@ ul {
 
 .timetable {
   padding-bottom: 50px;
-  padding-top: 125px;
+  padding-top: 60px;
 }
 
 .timetable_title {

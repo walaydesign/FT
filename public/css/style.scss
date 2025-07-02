@@ -131,8 +131,11 @@ ul {
 .head {
   background-image: url(../img/bg-1.png);
   background-size: 100%;
-  background-position: 0 top;
+  background-position: 0 32%;
   background-repeat: no-repeat;
+  @media screen and (max-width: 991px) {
+    background-position: 0 top;
+  }
 }
 
 .example {
@@ -142,7 +145,17 @@ ul {
 
 .kv {
   padding-top: 2vw;
-  padding-bottom: 15vw;
+  padding-bottom: 10vw;
+  position: relative;
+  // z-index: 0;
+  &_circles {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    mix-blend-mode: soft-light;
+    // z-index: -1;
+  }
   &_title {
     max-width: 650px;
     margin: 40px auto 70px;
@@ -373,16 +386,6 @@ ul {
       }
     }
   }
-  // @media screen and (max-width: 767px) {
-  //   &_text {
-  //     h2 {
-  //       font-size: 65px;
-  //     }
-  //     h3, h4 {
-  //       font-size: 21px;
-  //     }
-  //   }
-  // }
   @media screen and (max-width: 575px) {
     padding-top: 8vw;
     &_title {
@@ -403,6 +406,8 @@ ul {
       }
     }
     &_date {
+      margin-bottom: 20px;
+      padding-top: 0;
       &_content {
         gap: 40px;
       }
@@ -413,6 +418,9 @@ ul {
         li {
           font-size: 22px;
         }
+      }
+      h1 {
+        margin-bottom: 15px;
       }
     }
   }
@@ -465,7 +473,7 @@ ul {
 
 .timetable {
   padding-bottom: 50px;
-  padding-top: 125px;
+  padding-top: 60px;
   &_title {
     max-width: 600px;
     width: 100%;
